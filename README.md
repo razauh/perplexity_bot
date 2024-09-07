@@ -1,3 +1,4 @@
+
 # Perplexity_Bot - Query LLMs Without GPUs
 
 Are you looking to leverage the power of Large Language Models (LLMs) but don't have the GPU resources to run them locally? **Perplexity_Bot** is your solution! This project provides a FastAPI-based interface to interact with state-of-the-art LLMs served by Perplexity. Deploy it easily, ask your questions, and receive intelligent responses without the need for expensive hardware!
@@ -15,45 +16,44 @@ Are you looking to leverage the power of Large Language Models (LLMs) but don't 
 - FastAPI and Uvicorn
 - Playwright
 
-
 ## Installation
 
 ### Clone the Repository:
-```bash
+\`\`\`bash
 git clone https://github.com/razauh/perplexity_bot.git
-cd perplexity_bot```
+cd perplexity_bot
+\`\`\`
 
-## Install the Required Packages:
-
-```bash
+### Install the Required Packages:
+\`\`\`bash
 pip install fastapi uvicorn playwright
-playwright install`
+playwright install
+\`\`\`
 
-
-## Run the API:
-
-```bash
+### Run the API:
+\`\`\`bash
 uvicorn app:app --reload
-
-
+\`\`\`
 Your API will be running on [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## 📝 How to Use
 
-Submit a Query: Send a POST request to `/ask` with a JSON body containing your question:
+### Submit a Query: 
+Send a POST request to \`/ask\` with a JSON body containing your question:
 
-```json
+\`\`\`json
 {
     "question": "Your question here"
 }
+\`\`\`
 
 ### Example using curl:
-
-```bash
+\`\`\`bash
 curl -X 'POST' \
   'http://127.0.0.1:8000/ask' \
   -H 'Content-Type: application/json' \
   -d '{"question": "What is the main focus of the Python file in the TensorFlow issue?"}'
+\`\`\`
 
 ## 🌍 Why Use Perplexity_Bot?
 
