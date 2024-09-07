@@ -32,7 +32,7 @@ playwright install
 
 ### Run the API:
 ```bash
-uvicorn app:app --reload
+uvicorn perplexity_bot:app --reload
 ```
 Your API will be running on [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
