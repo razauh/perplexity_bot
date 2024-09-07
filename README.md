@@ -25,35 +25,35 @@ cd perplexity_bot
 ```
 
 ### Install the Required Packages:
-\`\`\`bash
+```bash
 pip install fastapi uvicorn playwright
 playwright install
-\`\`\`
+```
 
 ### Run the API:
-\`\`\`bash
+```bash
 uvicorn app:app --reload
-\`\`\`
+```
 Your API will be running on [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## 📝 How to Use
 
 ### Submit a Query: 
-Send a POST request to \`/ask\` with a JSON body containing your question:
+Send a POST request to `/ask` with a JSON body containing your question:
 
-\`\`\`json
+```json
 {
     "question": "Your question here"
 }
-\`\`\`
+```
 
 ### Example using curl:
-\`\`\`bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/ask' \
-  -H 'Content-Type: application/json' \
+```bash
+curl -X 'POST' 
+  'http://127.0.0.1:8000/ask' 
+  -H 'Content-Type: application/json' 
   -d '{"question": "What is the main focus of the Python file in the TensorFlow issue?"}'
-\`\`\`
+```
 
 ## 🌍 Why Use Perplexity_Bot?
 
