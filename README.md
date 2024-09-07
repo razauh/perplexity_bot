@@ -19,10 +19,10 @@ Are you looking to leverage the power of Large Language Models (LLMs) but don't 
 ## Installation
 
 ### Clone the Repository:
-\`\`\`bash
+```bash
 git clone https://github.com/razauh/perplexity_bot.git
 cd perplexity_bot
-\`\`\`
+```
 
 ### Install the Required Packages:
 \`\`\`bash
