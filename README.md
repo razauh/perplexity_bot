@@ -21,19 +21,19 @@ Are you looking to leverage the power of Large Language Models (LLMs) but don't 
 ### Clone the Repository:
 ```bash
 git clone https://github.com/razauh/perplexity_bot.git
-cd perplexity_bot
+cd perplexity_bot```
 
 ## Install the Required Packages:
 
 ```bash
 pip install fastapi uvicorn playwright
-playwright install
+playwright install```
 
 
 ## Run the API:
 
 ```bash
-uvicorn app:app --reload
+uvicorn app:app --reload```
 
 
 Your API will be running on [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
@@ -45,7 +45,7 @@ Submit a Query: Send a POST request to `/ask` with a JSON body containing your q
 ```json
 {
     "question": "Your question here"
-}
+}```
 
 ### Example using curl:
 
@@ -53,7 +53,7 @@ Submit a Query: Send a POST request to `/ask` with a JSON body containing your q
 curl -X 'POST' \
   'http://127.0.0.1:8000/ask' \
   -H 'Content-Type: application/json' \
-  -d '{"question": "What is the main focus of the Python file in the TensorFlow issue?"}'
+  -d '{"question": "What is the main focus of the Python file in the TensorFlow issue?"}'```
 
 ## 🌍 Why Use Perplexity_Bot?
 
