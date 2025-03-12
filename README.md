@@ -13,7 +13,6 @@ Are you looking to leverage the power of Large Language Models (LLMs) but don't 
 
 ### Prerequisites
 - Python 3.8+
-- FastAPI and Uvicorn
 - Playwright
 
 ## Installation
@@ -26,34 +25,16 @@ cd perplexity_bot
 
 ### Install the Required Packages:
 ```bash
-pip install fastapi uvicorn playwright
+pip install playwright
 playwright install
 ```
 
-### Run the API:
+### Run the scipt:
 ```bash
-uvicorn perplexity_bot:app --reload
-```
-Your API will be running on [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
-
-## 📝 How to Use
-
-### Submit a Query: 
-Send a POST request to `/ask` with a JSON body containing your question:
-
-```json
-{
-    "question": "Your question here"
-}
+python perplexity_bot.py
 ```
 
-### Example using curl:
-```bash
-curl -X 'POST' 
-  'http://127.0.0.1:8000/ask' 
-  -H 'Content-Type: application/json' 
-  -d '{"question": "What is the main focus of the Python file in the TensorFlow issue?"}'
-```
+
 
 ## 🌍 Why Use Perplexity_Bot?
 
@@ -63,4 +44,4 @@ curl -X 'POST'
 
 ## 🙌 Contributing
 
-We welcome contributions to make Perplexity_Bot even better! Feel free to fork the repository, make changes, and submit a pull request.
+Contributions are welcomed to make Perplexity_Bot even better! Feel free to fork the repository, make changes, and submit a pull request.
